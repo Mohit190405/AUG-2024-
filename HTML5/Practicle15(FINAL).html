@@ -1,0 +1,132 @@
+<!-- FINAL PRACTICLE AND EXAM CODE  -->
+
+<!-- AIM:-> HTML Code for Request and Login with Admin Panel   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login and Request Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+        .admin-panel {
+            display: none; /* Hidden by default */
+        }
+        .show-admin-panel {
+            display: block; /* Show the admin panel */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div id="login-section">
+            <h1>Admin Login</h1>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <button type="button" onclick="showAdminPanel()">Login</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Request Form -->
+        <div id="request-section">
+            <h1>Submit a Request</h1>
+            <form id="request-form">
+                <div class="form-group">
+                    <label for="requester-name">Your Name:</label>
+                    <input type="text" id="requester-name" name="requester-name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="request-email">Your Email:</label>
+                    <input type="email" id="request-email" name="request-email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="request-details">Request Details:</label>
+                    <textarea id="request-details" name="request-details" rows="4" placeholder="Enter your request details" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Submit Request</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Admin Panel (Initially hidden) -->
+        <div id="admin-panel" class="admin-panel">
+            <h1>Admin Panel</h1>
+            <h2>Welcome, Admin!</h2>
+            <p>This is the admin panel. Here you can manage requests and users.</p>
+            <!-- Additional admin functionalities can be added here -->
+        </div>
+    </div>
+
+    <script>
+        function showAdminPanel() {
+            // Simple login check (for demonstration purposes only)
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'admin' && password === 'password') {
+                document.getElementById('login-section').style.display = 'none';
+                document.getElementById('admin-panel').classList.add('show-admin-panel');
+            } else {
+                alert('Invalid username or password');
+            }
+        }
+    </script>
+</body>
+</html>

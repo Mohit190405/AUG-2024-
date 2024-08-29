@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    DAY 19 - Float and Clear 
+  </title>
+  <style>
+    /* Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .float-left {
+      float: left;
+      width: 200px;
+      height: 150px;
+      background-color: #3498db; /* Blue */
+      color: #fff;
+      margin-right: 15px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .float-right {
+      float: right;
+      width: 200px;
+      height: 150px;
+      background-color: #2ecc71; /* Green */
+      color: #fff;
+      margin-left: 15px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .clear-both {
+      clear: both; /* Clears both left and right floats */
+    }
+
+    .content {
+      background-color: #ecf0f1; /* Light Gray */
+      padding: 20px;
+      overflow: auto; /* Ensures the container wraps around floated elements */
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="float-left">
+      <p>Left Float</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vehicula diam nec sem hendrerit, in elementum odio interdum. Aenean vel suscipit elit. Nam nec dui vel odio vehicula condimentum.</p>
+    <div class="float-right">
+      <p>Right Float</p>
+    </div>
+    <p>Vestibulum viverra orci vitae velit cursus, at feugiat ligula dictum. Quisque et venenatis urna. Morbi varius sapien eu turpis cursus, ac fermentum augue interdum.</p>
+    <div class="clear-both"></div> <!-- Clears the floats -->
+  </div>
+</body>
+</html>

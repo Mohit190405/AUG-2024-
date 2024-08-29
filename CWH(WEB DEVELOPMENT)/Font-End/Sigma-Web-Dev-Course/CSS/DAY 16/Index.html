@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+   DAY 16 - CSS Colors
+   </title>
+  <style>
+    /* CSS Variables for Colors */
+    :root {
+      --primary-color: #3498db; /* Blue */
+      --secondary-color: #2ecc71; /* Green */
+      --accent-color: #e74c3c; /* Red */
+      --background-color: #ecf0f1; /* Light Gray */
+      --text-color: #2c3e50; /* Dark Gray */
+    }
+
+    /* Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--secondary-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+    }
+
+    p {
+      color: var(--text-color);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      background-color: var(--accent-color);
+      color: #fff;
+      padding: 15px;
+      border-radius: 5px;
+    }
+
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--secondary-color);
+      text-decoration: underline;
+    }
+
+    .gradient-background {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .bordered {
+      border: 3px solid var(--accent-color);
+      padding: 15px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Colors Example</h1>
+  <h2>Different Ways to Use Colors</h2>
+  <p>This is a paragraph demonstrating the use of color variables for consistent theming across the page. The text color and background color are set using CSS variables.</p>
+  <div class="highlight">
+    This is a highlighted section with an accent color background.
+  </div>
+  <a href="#">This is a link. Hover to see the color change.</a>
+  <div class="gradient-background">
+    This section has a gradient background.
+  </div>
+  <div class="bordered">
+    This section has a border with the accent color.
+  </div>
+</body>
+</html>

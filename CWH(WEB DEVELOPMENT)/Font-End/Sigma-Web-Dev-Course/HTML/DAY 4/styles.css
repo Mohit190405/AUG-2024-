@@ -1,0 +1,16 @@
+/* styles.css */
+h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+h2 {
+  font-size: 2em;
+  color: #666;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}

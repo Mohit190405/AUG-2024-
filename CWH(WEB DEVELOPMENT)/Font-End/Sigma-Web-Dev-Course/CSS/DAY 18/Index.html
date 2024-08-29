@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    DAY 18 - CSS Box Model 
+  </title>
+  <style>
+    /* Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    .box {
+      background-color: #fff;
+      border: 2px solid #3498db; /* Blue border */
+      padding: 20px; /* Space between content and border */
+      margin: 20px; /* Space between this box and other elements */
+      width: 200px;
+      height: 150px;
+    }
+
+    .box p {
+      margin: -5px; /* Remove default margin from paragraphs */
+    }
+
+    .box-with-padding {
+      padding: 35px; /* Increased padding */
+    }
+
+    .box-with-border {
+      border-width: 15px; /* Thicker border */
+    }
+
+    .box-with-margin {
+      margin: 50px; /* Increased margin */
+    }
+
+    .box-combined {
+      padding: 20px;
+      border: 5px solid #e74c3c; /* Red border */
+      margin: 20px;
+      background-color: #ecf0f1; /* Light gray background */
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>This is a box with padding, border, and margin. The padding adds space inside the box between the content and the border. The border adds a blue outline around the box, and the margin creates space between this box and other elements.</p>
+  </div>
+
+  <div class="box box-with-padding">
+    <p>Box with increased padding.</p>
+  </div>
+
+  <div class="box box-with-border">
+    <p>Box with a thicker border.</p>
+  </div>
+
+  <div class="box box-with-margin">
+    <p>Box with increased margin.</p>
+  </div>
+
+  <div class="box box-combined">
+    <p>Box with combined styles: padding, border, and margin.</p>
+  </div>
+</body>
+</html>

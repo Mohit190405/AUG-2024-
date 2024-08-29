@@ -1,0 +1,38 @@
+    /* Block element styles */
+    .block-container {
+      background-color: #f4f4f4;
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+    
+    .block-container h1 {
+      color: #0056b3;
+      margin-top: 0;
+    }
+
+    .block-container p {
+      margin-bottom: 10px;
+    }
+
+    /* Inline element styles */
+    .inline-example {
+      background-color: #e0e0e0;
+      padding: 10px;
+    }
+
+    .inline-example span {
+      background-color: #c0c0c0;
+      padding: 5px;
+      margin-right: 10px;
+    }
+
+    .inline-example a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .inline-example a:hover {
+      text-decoration: underline;
+    }

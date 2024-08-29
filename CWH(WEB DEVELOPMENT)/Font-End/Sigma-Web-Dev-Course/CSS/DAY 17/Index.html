@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borders and Backgrounds Example</title>
+  <style>
+    /* CSS Variables for Colors */
+    :root {
+      --primary-color: #3498db; /* Blue */
+      --secondary-color: #2ecc71; /* Green */
+      --accent-color: #e74c3c; /* Red */
+      --background-color: #ecf0f1; /* Light Gray */
+      --text-color: #2c3e50; /* Dark Gray */
+    }
+
+    /* Basic Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      text-align: center;
+    }
+
+    .box {
+      background-color: #fff;
+      border: 2px solid var(--primary-color); /* Solid border */
+      border-radius: 10px; /* Rounded corners */
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .dashed-border {
+      border: 3px dashed var(--secondary-color); /* Dashed border */
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .dotted-border {
+      border: 3px dotted var(--accent-color); /* Dotted border */
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .gradient-background {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradient background */
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .image-background {
+      background: url('https://via.placeholder.com/800x400') no-repeat center center; /* Image background */
+      background-size: cover; /* Cover the element */
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      height: 300px;
+      line-height: 300px; /* Center text vertically */
+    }
+
+    .multi-background {
+      background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color)),
+                  url('https://via.placeholder.com/800x400') no-repeat center center; /* Multiple backgrounds */
+      background-size: cover;
+      padding: 20px;
+      border-radius: 10px;
+      color: #fff;
+      text-align: center;
+      height: 300px;
+      line-height: 300px; /* Center text vertically */
+    }
+
+    .border-radius {
+      border: 2px solid var(--primary-color);
+      border-radius: 50%; /* Circular border */
+      padding: 20px;
+      width: 150px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Borders and Backgrounds Example</h1>
+  
+  <div class="box">
+    This is a box with a solid border and rounded corners.
+  </div>
+
+  <div class="dashed-border">
+    This box has a dashed border with rounded corners.
+  </div>
+
+  <div class="dotted-border">
+    This box has a dotted border with rounded corners.
+  </div>
+
+  <div class="gradient-background">
+    This section has a gradient background.
+  </div>
+
+  <div class="image-background">
+    Image background with centered text.
+  </div>
+
+  <div class="multi-background">
+    This section has both a gradient and an image background.
+  </div>
+
+  <div class="border-radius">
+    Circular border example
+  </div>
+</body>
+</html>

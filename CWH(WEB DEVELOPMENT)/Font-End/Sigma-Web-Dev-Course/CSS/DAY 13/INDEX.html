@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    DAY 13 CSS Selectors 
+  </title>
+  <style>
+    /* Basic Selectors */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      color: darkblue;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: darkgreen;
+    }
+
+    #main-content {
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    /* Grouping Selectors */
+    h2, h3 {
+      color: darkred;
+    }
+
+    /* Combinator Selectors */
+    .container p {
+      color: darkorange;
+    }
+
+    .wrapper > .highlight {
+      background-color: yellow;
+    }
+
+    h1 + p {
+      font-style: italic;
+    }
+
+    .box ~ p {
+      color: gray;
+    }
+
+    /* Attribute Selectors */
+    [type="text"] {
+      border: 2px solid #ccc;
+      padding: 5px;
+    }
+
+    [href^="https"] {
+      color: green;
+    }
+
+    [href$=".pdf"] {
+      color: red;
+    }
+
+    [class*="button"] {
+      background-color: blue;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    /* Pseudo-Classes */
+    a:hover {
+      color: orange;
+    }
+
+    input:focus {
+      border-color: blue;
+    }
+
+    li:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    p:first-child {
+      font-weight: bold;
+    }
+
+    /* Pseudo-Elements */
+    p::before {
+      content: "Note: ";
+      font-weight: bold;
+    }
+
+    p::after {
+      content: ".";
+    }
+  </style>
+</head>
+<body>
+  <div id="main-content">
+    <h1 class="intro">
+      DAY 13 CSS Selectors
+    </h1>
+    <h1>Main Heading</h1>
+    <p>This is a paragraph with the default styling.</p>
+    <div class="container">
+      <p>Styled by descendant selector.</p>
+    </div>
+    <div class="wrapper">
+      <div class="highlight">Highlighted box</div>
+    </div>
+    <a href="https://example.com">External Link</a>
+    <a href="document.pdf">PDF Link</a>
+    <input type="text" placeholder="Type here...">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <p class="button">Click Me</p>
+  </div>
+</body>
+</html>

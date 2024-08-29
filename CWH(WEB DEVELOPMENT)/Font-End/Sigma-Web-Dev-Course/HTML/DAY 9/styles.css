@@ -1,0 +1,27 @@
+/* Styling for the header using ID */
+#header {
+  background-color: lightblue;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Styling for paragraphs using class */
+.text {
+  color: darkblue;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Styling for the section using class */
+.content {
+  padding: 20px;
+  border: 2px solid darkblue;
+  margin: 10px;
+}
+
+/* Button styling */
+#changeColorButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    DAY 15 CSS Fonts 
+  </title>
+  <!-- Link to Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Basic Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Heading 1 */
+    h1 {
+      font-family: 'Georgia', serif;
+      font-size: 2.5rem; /* Responsive size */
+      font-weight: 700; /* Bold */
+      font-style: italic; /* Italic */
+      color: #333;
+      text-align: center;
+    }
+
+    /* Heading 2 */
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem; /* Responsive size */
+      font-weight: 700; /* Bold */
+      color: #1e88e5;
+    }
+
+    /* Paragraphs */
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      font-weight: 400; /* Normal */
+      color: #555;
+      margin-bottom: 1em;
+    }
+
+    /* Highlighted Section */
+    .highlight {
+      font-family: 'Georgia', serif;
+      font-size: 1.2rem; /* Slightly larger */
+      font-weight: 400; /* Normal weight */
+      background-color: #ffeb3b;
+      padding: 10px;
+      border: 1px solid #fbc02d;
+    }
+
+    /* Links */
+    a {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: #1e88e5;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Font Sizes */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the CSS Fonts Example</h1>
+  <h2>Subtitle with Roboto Font</h2>
+  <p>This is a paragraph demonstrating the Roboto font. It has a line height for better readability and a normal font weight.</p>
+  <div class="highlight">
+    This is a highlighted section with a Georgia font and a background color to make it stand out.
+  </div>
+  <p>Visit our <a href="#">website</a> for more information.</p>
+</body>
+</html>
